@@ -25,4 +25,4 @@ When you run (”use” or ”call”) a function, check these things:
 #lista
 list = [coisasdalista]
 
-range(starPoint, limit, increment):
+range(startPoint, limit, increment):
