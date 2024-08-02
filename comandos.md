@@ -21,3 +21,8 @@ When you run (”use” or ”call”) a function, check these things:
 2. Did you put the ( character after the name to run it?
 3. Did you put the values you want into the parenthesis separated by commas?
 4. Did you end the function call with a ) character?
+
+#lista
+list = [coisasdalista]
+
+range(starPoint, limit, increment):
