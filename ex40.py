@@ -6,10 +6,21 @@ class Song(object):
         for line in self.lyrics:
             print(line)
             
-happyBday = Song(["""Happy birthday to you\nI don't want to get sued\nSo I'll stop right there!"""])
+# Define the lyrics in separate variables
+happy_bday_lyrics = [
+    "Happy birthday to you",
+    "I don't want to get sued",
+    "So I'll stop right there!"
+]
 
-bullsOnParade = Song(["""They rally around tha family\nWith pockets full of shells"""])
+bulls_on_parade_lyrics = [
+    "They rally around tha family",
+    "With pockets full of shells"
+]
 
+# Pass the lyrics variables to the Song class
+happyBday = Song(happy_bday_lyrics)
+bullsOnParade = Song(bulls_on_parade_lyrics)
+# Call the method to sing the songs
 happyBday.sing_me_a_song()
-
 bullsOnParade.sing_me_a_song()
