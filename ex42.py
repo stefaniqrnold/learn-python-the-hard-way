@@ -56,17 +56,17 @@ mary = Person("Mary")
 ## mary has-a pet, satan is-a pet
 mary.pet = satan
 
-## ??
+## frank is-a Employee
 frank = Employee("Frank", 120000)
 
-## ??
+## frank has-a pet, rover is-a pet
 frank.pet = rover
 
-## ??
+## flipper is-a fish
 flipper = Fish()
 
-## ??
+## crouse is-a salmon
 crouse = Salmon()
 
-## ??
+## harry is-a halibut
 harry = Halibut()
