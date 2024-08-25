@@ -1,41 +1,41 @@
-## Animal is-a object (yes, sort of confusing) look at the extra credit
+## Animal is-a object (this is a base class, so it's a bit of a special case)
 class Animal(object):
     pass
 
-## Dog is-a animal
+## Dog is-a Animal
 class Dog(Animal):
     def __init__(self, name):
-        ## ??
+        ## Dog has-a name
         self.name = name
 
-## Cas is-a animal
+## Cat is-a Animal
 class Cat(Animal):
     def __init__(self, name):
         ## Cat has-a name
         self.name = name
 
-## Person is-a object
+## Person is-a object (this is a base class, so it's a bit of a special case)
 class Person(object):
     def __init__(self, name):
-        ## Person has-a name of some kind
+        ## Person has-a name
         self.name = name
 
-        ## Person has-a pet of some kind
+        ## Person has-a pet
         self.pet = None
 
-## Employee is-a person
+## Employee is-a Person
 class Employee(Person):
     def __init__(self, name, salary):
-        ## calls the specific attributtes of father class
+        ## Calls the __init__ method of the Person class
         super(Employee, self).__init__(name)
         ## Employee has-a salary
         self.salary = salary
 
-## Fish is-a object
+## Fish is-a object (this is a base class, so it's a bit of a special case)
 class Fish(object):
     pass
 
-## Salmon is-a fish
+## Salmon is-a Fish
 class Salmon(Fish):
     pass
 
@@ -43,14 +43,13 @@ class Salmon(Fish):
 class Halibut(Fish):
     pass
 
-
 ## rover is-a Dog
 rover = Dog("Rover")
 
-## satan is-a cat
+## satan is-a Cat
 satan = Cat("Satan")
 
-## mary is-a person
+## mary is-a Person
 mary = Person("Mary")
 
 ## mary has-a pet, satan is-a pet
@@ -62,11 +61,11 @@ frank = Employee("Frank", 120000)
 ## frank has-a pet, rover is-a pet
 frank.pet = rover
 
-## flipper is-a fish
+## flipper is-a Fish
 flipper = Fish()
 
-## crouse is-a salmon
+## crouse is-a Salmon
 crouse = Salmon()
 
-## harry is-a halibut
+## harry is-a Halibut
 harry = Halibut()
