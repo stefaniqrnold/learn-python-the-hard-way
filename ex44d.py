@@ -26,10 +26,8 @@ class Child(Parent):
         super(Child, self).altered() # Calls the Parent's `altered` method.
         print("CHILD, AFTER PARENT altered()") # Custom behavior after calling the Parent's `altered`.
         
-# Creates an instance of the Parent class.
+# Creates instances of the Parent and Child classes.
 dad = Parent()
-
-# Creates an instance of the Child class.
 son = Child()
 
 # Calls the `implicit` method on the Parent instance.
