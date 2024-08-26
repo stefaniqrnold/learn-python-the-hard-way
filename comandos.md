@@ -1,8 +1,13 @@
 ls - mmostra os arquivos no diretorio atual
+
 touch - cria um arquivo
+
 micro - abre um arquivo pelo micro
+
 cd - change directory 
+
 cat - exibir arquivo direto no terminal
+
 pydoc - documentacao
 
 #funcoes
