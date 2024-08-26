@@ -104,8 +104,8 @@ class LaserWeaponArmory(Scene):
             the lock closes forever and you can't get the bomb.
             code is 3 digits.
             """))
-        code = f"{randint(1,3)}{randint(1,3)}{randint(1,3)}"
-        guess = input("Enter the code to unlock the bomb (3 digits):\n[keypad]> ")
+        code = f"{randint(0,1)}{randint(0,1)}{randint(0,1)}"
+        guess = input("Enter the code to unlock the bomb (3 digits, 0 or 1):\n[keypad]> ")
         guesses = 0
 
         while guess != code and guesses < 10:
@@ -181,8 +181,8 @@ class EscapePod(Scene):
             them could be damaged but you don't have time to look.
             There's 5 pods, which one do you take?
             """))
-        goodPod = randint(1,5)
-        guess = input("Choose a pod (1-5): ")
+        goodPod = randint(1,3)
+        guess = input("Choose a pod (1-3): ")
 
         if int(guess) != goodPod:
             print(dedent(f"""
