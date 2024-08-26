@@ -179,7 +179,7 @@ class EscapePod(Scene):
             clear of interference. You get to the chamber with the
             escape pods, and now need to pick one to take. Some of
             them could be damaged but you don't have time to look.
-            There's 5 pods, which one do you take?
+            There's 3 pods, which one do you take?
             """))
         goodPod = randint(1,3)
         guess = input("Choose a pod (1-3): ")
